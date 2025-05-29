@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Menu, X, Bell, User } from 'lucide-react';
+import {  Bell, User } from 'lucide-react';
 import { logout } from '../../store/actions/authActions';
 
 const Navbar = () => {
@@ -21,14 +21,6 @@ const Navbar = () => {
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <div className="flex-shrink-0 lg:hidden">
-              <button 
-                type="button"
-                className="text-gray-500 hover:text-gray-600 focus:outline-none"
-              >
-                <Menu size={24} />
-              </button>
-            </div>
             
             <div className="hidden lg:block">
               <h1 className="text-xl font-semibold text-gray-800">
